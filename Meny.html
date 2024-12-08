@@ -253,6 +253,25 @@ hr {
                 min-width: 80%;
             }
           }
+
+          .language-selector {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin: 20px;
+        }
+        .language-selector img {
+            cursor: pointer;
+            width: 30px; /* Gjatësia e flamurit */
+            height: 20px; /* Lartësia e flamurit */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .language-selector img:hover {
+            opacity: 0.7;
+        }
+
+
     </style>
 
 
@@ -304,28 +323,35 @@ hr {
         </nav>
       </div>
     </header>
-    <h1 style="color: white; text-align: center; margin-top: 20px;">Cka ofrojme ne</h1>
+
+    <div class="language-selector">
+        <img src="https://th.bing.com/th?id=OSK.HEROo1Hy4-nUoE3huqwGw_SjCFSLjqRVU_x_mgmpLklPuMU&w=296&h=176&c=1&rs=2&o=6&dpr=1.5&pid=SANGAM" alt="Shqip" title="Shqip" onclick="setLanguage('shqip')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="English" title="English" onclick="setLanguage('anglisht')">
+        <img src="https://th.bing.com/th?id=OIP.yC5HOVTe4JBzyP1X_wABOwHaDt&w=350&h=175&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Maqedonisht" title="Maqedonisht" onclick="setLanguage('maqedonisht')">
+    </div>
+
+    <h1 style="color: white; text-align: center; margin-top: 20px;">Menuja qe ofron kompania jone</h1>
     
     <div class="menu-wrapper">
       <ul class="menu">
-          <li><i class="fas fa-utensils"></i> Ushqime
+          <li class="fas fa-utensils">   <i  style="padding-left: 16px;" style="font-size: 27;" data-translate-key="Ushqime" ></i>  
               <ul class="submenu">
-                  <li><a href="restorantet.html" style="color: white; text-decoration: none;">Restorantet</a></li>
-                  <li><a href="Fast_Food.html" style="color: white; text-decoration: none;">Fast Food</a></li>
+                  <li><a href="restorantet.html" style="color: white; text-decoration: none;    "  data-translate-key="Restorant">Restorantet</a></li>
+                  <li><a href="Fast_Food.html" style="color: white; text-decoration: none;" data-translate-key="fast_food">Ushqime te shpejta</a></li>
                   <li><a href="Delivery.html" style="color: white; text-decoration: none;">Delivery</a></li>
                   <li><a href="Kuzhinat_popullore.html" style="color: white; text-decoration: none;">Kuzhinat Popullore</a></li>
               </ul>
           </li>
-          <li><i class="fas fa-coffee"></i> Kafeterite
+          <li class="fas fa-coffee" ><i style="padding-left: 10px;" data-translate-key="Kafeterit"></i>
             <ul class="submenu">
-                <li ><a href="Kafeterite.html" style="color: white; text-decoration: none;">Kafeterit</a></li>
-                <li><a href="Shisha_bar.html" style="color: white; text-decoration: none;">Shisha Baret</a></li>
+                <li ><a href="Kafeterite.html" style="color: white; text-decoration: none;" data-translate-key="Kafeterit">Kafeterit</a></li>
+                <li><a href="Shisha_bar.html" style="color: white; text-decoration: none;" data-translate-key="shisha_bar">Shisha Baret</a></li>
             </ul>
         </li>
-        <li><i class="fas fa-hammer"></i> Ndertimtari
+        <li class="fas fa-hammer"><i  style="padding-left: 10px;" data-translate-key="Ndertimtari"></i> 
             <ul class="submenu">
                 <li>Betonjerka</li>
-                <li><a href="Uje_instalues.html" style="color: white; text-decoration: none;">Uje Instalues</a></li>
+                <li><a href="Uje_instalues.html " style="color: white; text-decoration: none;">Uje Instalues</a></li>
                 <li>Elektricist</li>
                 <li>Moler</li>
                 <li>Gipser</li>
@@ -333,7 +359,7 @@ hr {
                 <li>Inxhinjer</li>
             </ul>
         </li>
-        <li><i class="fas fa-stethoscope"></i> Mjeksi
+        <li class="fas fa-stethoscope"><i  style="padding-left: 13px;"  data-translate-key="mjeksi"></i> 
             <ul class="submenu">
                 <li>Kirurg</li>
                 <li>Fizoterapist</li>
@@ -341,7 +367,7 @@ hr {
                 <li>Etj.</li>
             </ul>
         </li>
-        <li><i class="fas fa-bus"></i> Transporti
+        <li class="fas fa-bus"><i  style="padding-left: 10px;" data-translate-key="Transport"></i> 
             <ul class="submenu">
                 <li>Transporti Lokal</li>
                 <li>Transporti Urban</li>
@@ -350,14 +376,14 @@ hr {
                 <li>Taksit</li>
             </ul>
         </li>
-        <li><i class="fas fa-cogs"></i> Sherbime
+        <li class="fas fa-cogs" ><i style="padding-left: 8px;" data-translate-key="Sherbime">Sherbime</i> 
             <ul class="submenu">
                 <li>Kerkim Puntori</li>
                 <li>Kerkim Pune</li>
                 <li><a href="stuido_frizerkat.html" style="color: white; text-decoration: none;">Studio Frizerkat</a></li>
             </ul>
         </li>
-        <li><i class="fas fa-map"></i> <a href="map.html" style="color: white; text-decoration: none;">Harta</a></li>
+        <li><i class="fas fa-map"></i> <a href="map.html" style="color: white; text-decoration: none;" data-translate-key="Harta">Harta</a></li>
    
       </li>
     </ul>
@@ -430,6 +456,87 @@ hr {
         });
     });
 </script>
+
+
+<script>
+    // Objekt që përmban përkthimet nga shqip në anglisht dhe maqedonisht
+    const translations = {
+        "Ushqime": {
+            "shqip": "               Ushqime",
+            "anglisht": "           Food",
+            "maqedonisht": "            MAC"
+        },
+        "Kafeterit": {
+            "shqip": "   Kafeterit",
+            "anglisht": "Cafeteria",
+            "maqedonisht": "MAC"
+        },
+        "fast_food": {
+            "shqip": "Ushqime te shpejta",
+            "anglisht": "Fast Food",
+            "maqedonisht": "MAC"
+        },
+        "shisha_bar": {
+            "shqip": "Shisha Baret",
+            "anglisht": "Hookah Bar",
+            "maqedonisht": "MAC"
+        },
+        "Ndertimtari": {
+            "shqip": "Ndertimtari",
+            "anglisht": "Construction",
+            "maqedonisht": "MAC"
+        },
+        "Transport":{
+            "shqip":"Transporti",
+            "anglisht" : "Transport",
+            "maqedonisht" : "MAC"
+        },
+        "Sherbime":{
+            "shqip" : "Sherbime",
+            "anglisht" : "Services",
+            "maqedonisht" : "MAC"
+        },
+        "Harta":{
+            "shqip" : "Harta",
+            "anglisht" : "Map",
+            "maqedonisht" : "MAC"
+        },
+        "Restorant":{
+            "shqip" : "Restorant",
+            "anglisht" : "Restaurants",
+            "maqedonisht" : "MAC"
+        },
+        "mjeksi":{
+            "shqip" : "Mjeksi",
+            "anglisht" : "x",
+            "maqedonisht" : "MAC"
+        }
+    };
+
+    // Variabli që ruan gjuhën aktuale
+    let currentLanguage = "shqip";  // Gjuhën e paracaktuar (Shqip)
+
+    // Funksioni për të vendosur gjuhën
+    function setLanguage(language) {
+        currentLanguage = language;  // Përdorimi i gjuhës së zgjedhur
+
+        // Ndrysho tekstin në të gjithë faqen që ka atributin data-translate-key
+        const elements = document.querySelectorAll("[data-translate-key]");  // Gjej të gjitha elementet që kanë atributin data-translate-key
+        elements.forEach(element => {
+            const key = element.getAttribute("data-translate-key");  // Merr çelësin përkthimi
+            const translation = translations[key];  // Merr përkthimin për çelësin
+            if (translation) {
+                element.innerText = translation[currentLanguage];  // Ndrysho tekstin në element
+            }
+        });
+    }
+
+    // Funksioni për të ndërruar gjuhën në fillim kur faqja ngarkohet
+    window.onload = function() {
+        setLanguage(currentLanguage);  // Vendos gjuhën e paracaktuar kur faqja hapet
+    }
+</script>
+
 
 </body>
 
